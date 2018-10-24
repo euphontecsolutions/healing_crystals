@@ -1,0 +1,12 @@
+# starts rewrite engine
+RewriteEngine on
+# redirects direct .html page calls to their corresponding pages
+#RewriteRule ^([a-z0-9_-]+)\.html$ index.php/page/$1 [L]
+# for anything that is not a file
+RewriteCond %{REQUEST_FILENAME} !-f
+# and for anything that is not a directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# except if it's a robot
+RewriteCond $1 !^(index\.php|asset|robots\.txt)
+# send all that to index.php
+RewriteRule ^(.*)$ index.php/$1 [L]
