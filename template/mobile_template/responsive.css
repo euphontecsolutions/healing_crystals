@@ -1,0 +1,80 @@
+.table-responsive {
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    width: 100%;
+    min-height: 0.01%;
+    overflow-x: auto;
+	float:none;
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+        -webkit-overflow-scrolling: touch;
+}
+.table-responsive > table.shoppong_record {
+    margin-bottom: 20px;
+    max-width: 100%;
+    width: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.table-responsive > .shoppong_record > tbody > tr > td, .table-responsive > .shoppong_record > tbody > tr > th, .table-responsive > .shoppong_record > tfoot > tr > td, .table-responsive > .shoppong_record > tfoot > tr > th, .table-responsive > .shoppong_record > thead > tr > td, .table-responsive > .shoppong_record > thead > tr > th {
+    white-space: nowrap;
+}
+
+@media (max-width: 1280px) {
+pre {
+	float: left;
+	white-space: normal;
+	width: 100%;
+	word-wrap: break-word;
+}
+p img {
+	max-width: 100% !important;
+	height: auto;
+}
+#cpage p img {
+	width: auto;
+	max-width: 100% !important;
+	height: auto;
+}
+}
+@media (max-width: 1024px) {
+TD.mainCO {
+	width: 100%;
+	display: block;
+}
+TD.mainCO span {
+	width: 100%;
+	display: block;
+}
+.tabs_design .tab_center_high_selected a {
+	word-wrap: break-word;
+	white-space: normal;
+} 
+#mainContentTD #productstabs td[width="100%"][valign="bottom"] table td[align="center"][style] {
+    float: left;
+}
+#mainContentTD #searchtabs .tabs_design td[align="center"][style] {    float: left;}
+}
+ @media (max-width:980px) {
+}
+@media screen and (max-width:767px) {
+.copyright-block .smallText {
+	width: 100%;
+	display: block;
+}
+}
+ @media screen and (max-width:680px) {
+	 #mainContentTD table[width="100%"] td p[align="center"] strong span[style] span[style] a {
+		display: block;
+		word-break: break-all;
+	}
+}
+ @media screen and (max-width:420px) {
+	#mainContentTD table td#cpage.mainA td[width="195"], #mainContentTD table td#cpage.mainA td[width="744"] {width:100%; float:left; height:auto;}
+	#mainContentTD table td#cpage.mainA td[width="195"] img[width="200"] {width:100%; height:auto;}
+}
+
+ @media screen and (max-width:360px) {
+	 .maintable .main-container #cpage td.hoverbox a.MPDPicture img[width="100"] { width: 60px; height:auto;}
+}

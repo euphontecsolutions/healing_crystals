@@ -487,7 +487,7 @@ echo $HTTP_GET_VARS['linkcat_name'];
   }
 
 // Lango added for template BOF:
-  require(DIR_WS_INCLUDES . 'template_application_top.php');
+  require(DIR_WS_INCLUDES . 'template_application_top_mobile.php');
 // Lango added for template EOF:
 
 // include the language translations

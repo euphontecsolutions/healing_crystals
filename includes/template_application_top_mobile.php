@@ -96,18 +96,18 @@ $cptemplate = tep_db_fetch_array($customer_pref_template_query);
 if ($HTTP_GET_VARS['selected_template'] != '') {
     tep_db_query("update " . TABLE_CUSTOMERS . " set customers_selected_template = '".$HTTP_GET_VARS['templateID']."' where customers_id = '" . $customer_id . "'");
     $_SESSION['templateSelected'] = $HTTP_GET_VARS['selected_template'];
-    define(TEMPLATE_NAME, $HTTP_GET_VARS['selected_template']);
+    define(TEMPLATE_NAME, 'mobile_template');
     define(TEMPLATE_STYLE, DIR_WS_TEMPLATES . TEMPLATE_NAME . "/stylesheet.css");
     define(TEMPLATE_STYLE_ORIGINAL, DIR_WS_TEMPLATES . DEFAULT_TEMPLATE . "/stylesheet_original.css");
     require(DIR_WS_TEMPLATES . TEMPLATE_NAME . '/boxes.tpl.php');
 } else if ($_SESSION['templateSelected']!='') {
-    define(TEMPLATE_NAME, $_SESSION['templateSelected']);
+    define(TEMPLATE_NAME,'mobile_template');
     define(TEMPLATE_STYLE, DIR_WS_TEMPLATES . TEMPLATE_NAME . "/stylesheet.css");
     define(TEMPLATE_STYLE_ORIGINAL, DIR_WS_TEMPLATES . DEFAULT_TEMPLATE . "/stylesheet_original.css");
     require(DIR_FS_CATALOG . DIR_WS_TEMPLATES . TEMPLATE_NAME . '/boxes.tpl.php');
 } else if (tep_not_null($cptemplate['template_selected'])) {
     $_SESSION['templateSelected'] = $cptemplate['template_selected'];
-    define(TEMPLATE_NAME, $cptemplate['template_selected']);
+    define(TEMPLATE_NAME, 'mobile_template');
     define(TEMPLATE_STYLE, DIR_WS_TEMPLATES . TEMPLATE_NAME . "/stylesheet.css");
     define(TEMPLATE_STYLE_ORIGINAL, DIR_WS_TEMPLATES . TEMPLATE_NAME . "/stylesheet_original.css");
     require(DIR_WS_TEMPLATES . TEMPLATE_NAME . '/boxes.tpl.php');
