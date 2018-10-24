@@ -256,7 +256,7 @@ table_image_border_bottom();
                 		$_SESSION['redirectV']=tep_href_link('account.php');	
                 }?>
                 <input type="hidden" name="redirect" value="<?php echo $_SESSION['redirectV'];?>"/>
-                <?php echo '<button class="btn btn-success btn-block" type="submit">' .IMAGE_BUTTON_CONTINUE.  tep_draw_separator('pixel_trans.gif', '10', '1').'</button>'; ?></td>
+                <?php echo '<button class="btn btn-primary btn-block" type="submit"> Save'.  tep_draw_separator('pixel_trans.gif', '10', '1').'</button>'; ?></td>
               
               </tr>
             </table></td>
